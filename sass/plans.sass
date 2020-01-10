@@ -1,0 +1,80 @@
+.plans 
+	margin: auto
+	text-align: center
+	padding-top: 120px
+	padding-bottom: 120px
+	@include lato 
+	&-header 
+		color: #414141
+		font-size: 36px
+		font-weight: 700
+		line-height: 51px
+	&-desc 
+		padding-top: 20px
+		text-align: center
+		margin: auto
+		max-width: 520px
+		color: #6c6c6c
+		font-family: "Lato Light"
+		font-size: 16px
+		font-weight: 300
+		line-height: 28px
+	&-blocks 
+		padding-top: 70px
+		margin: auto
+		justify-content: center
+		display: flex
+		flex-wrap: wrap
+	&-block
+		margin: 30px
+		padding: 27px 20px 50px 20px
+		&:hover 
+			background-color: #f6fafd
+			cursor: pointer
+		&__rate 
+			padding-top: 30px
+			color: #414141
+			font-size: 14px
+			font-weight: 700
+			text-transform: uppercase
+		&__price
+			padding-top: 25px
+			color: #fe4fa7
+			font-size: 72px
+			font-weight: 700
+			span 
+				color: #414141
+				font-size: 14px
+				font-weight: 700
+		&__text
+			padding-top: 25px
+			max-width: 260px
+			color: #6c6c6c
+			font-family: "Lato Light"
+			font-size: 16px
+			font-weight: 300
+			line-height: 28px
+			padding-bottom: 20px
+		&__submit 
+			width: 120px
+			margin: auto
+			text-align: center
+			padding: 14px 40px
+			border-radius: 4px
+			background-color: transparent
+			border: 1px solid #414141
+			&:hover 
+				border: none
+				background-image: linear-gradient(to right, #fe985b 0%, #fe4fa7 100%)
+			&:active
+				transition: 0.1s
+				padding: 10px 35px
+			input[value]
+				color: #414141
+				background: none
+				border: none
+				outline: none
+				font-size: 18px
+				font-weight: 700 
+		&__submit:hover input[value]
+			color: #fff

@@ -1,0 +1,87 @@
+.header 
+	min-height: 1100px
+	background-image: url("../img/header/main-img.png")
+	background-repeat: no-repeat 
+	background-size: cover
+	@include lato 
+.header-logo
+	padding-top: 35px
+	color: #ffffff
+	font-size: 24px
+	font-weight: bold
+.main 
+	padding-top: 400px
+	margin: auto
+	text-align: center
+	&-logo 
+		color: #ffffff
+		font-size: 55px
+		font-weight: 700
+		line-height: 60px
+		padding-bottom: 20px
+	&-desc 
+		margin: auto
+		max-width: 545px
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 32px
+	&-form 
+		padding-top: 50px
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		&__input
+			border-radius: 4px
+			background-color: rgba(255,255,255,0.25)
+			padding: 15px 20px 15px 10px
+			input[placeholder]
+				min-width: 300px
+				background-color: transparent
+				border: none
+				outline: none
+				padding-left: 10px
+				color: #fff
+				font-size: 16px
+				font-weight: 400
+		&__submit
+			padding: 14px 40px
+			margin-left: 50px
+			border-radius: 4px
+			background-image: linear-gradient(to right, #fe985b 0%, #fe4fa7 100%)
+			input[value]
+				background: none
+				border: none
+				outline: none
+				color: #ffffff
+				font-size: 18px
+				font-weight: 700 
+			&:hover 
+				cursor: pointer
+				background-image: linear-gradient(to right, #fe4fa7 0%, #fe985b 100%)
+			&:active
+				transition: 0.1s
+				padding: 10px 35px
+		&__input:not(:first-child)
+			margin-left: 50px
+input::-moz-placeholder 
+	color: #fff
+input::-webkit-input-placeholder 
+	color: #fff
+
+@media (max-width: 1115px)
+	.main-form__submit
+		margin: 20px
+@media (max-width: 713px)
+	.main-form__input:not(:first-child)
+		margin-left: 0
+@media (max-width: 663px)
+	.main-form__input
+		margin-top: 20px
+		padding: 15px auto 15px 10px
+@media (max-width: 380px)
+	.main-form__input
+		input[placeholder]
+			min-width: 235px
+

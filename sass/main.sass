@@ -1,0 +1,32 @@
+// === MIXINS ===
+@mixin lato
+	font-family: 'Lato', sans-serif
+
+
+// === MIXINS === //
+@import "normalize.sass"
+@import "header.sass"
+@import "business.sass"
+@import "adv.sass"
+@import "testim.sass"
+@import "plans.sass"
+@import "start.sass"
+@import "footer.sass"
+body 
+	@include lato
+	color: #fff
+.container 
+	max-width: 1170px
+	margin-left: auto
+	margin-right: auto
+.row
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-right: 15px
+	margin-left: 15px
+	flex-wrap: wrap
+a 
+	text-decoration: none

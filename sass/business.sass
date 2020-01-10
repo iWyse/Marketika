@@ -1,0 +1,43 @@
+.business
+	padding-top: 120px
+	min-height: 500px
+	@include lato 
+	&-left 
+		max-width: 550px
+	&-header
+		color: #414141
+		font-size: 36px
+		font-weight: 700
+		line-height: 51px
+		padding-bottom: 40px
+	&-desc 
+		padding-top: 35px
+		&__caption 
+			color: #414141
+			font-size: 18px
+			font-weight: 700
+		&__text 
+			padding-top: 15px
+			max-width: 370px
+			color: #6c6c6c
+			font-size: 16px
+			font-weight: 300
+			line-height: 28px
+	&-img 
+		padding-top: 50px
+.line 
+	height: 2px
+	width: 1980px
+	background-color: #e2e2e2
+.line 
+	margin-top: 150px
+@media (max-width: 1153px)
+	.business-left 
+		margin: auto
+		text-align: center
+	.business-desc__text
+		max-width: 1200px
+	.business-img 
+		margin: auto
+		img
+			max-width: 100%

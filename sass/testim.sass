@@ -1,0 +1,43 @@
+.testim
+	display: flex
+	padding-top: 120px
+	padding-bottom: 100px
+	background-color: #f6fafd
+	@include lato
+	&-wrapper 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	&-img 
+		img 
+			max-width: 100%
+	&-right 
+		margin-left: 60px
+		&__about 
+			color: #414141
+			font-size: 24px
+			font-weight: 400
+			line-height: 40px
+			max-width: 534px
+		&__author
+			padding-top: 50px
+			&-name 
+				color: #414141
+				font-size: 24px
+				font-weight: 700
+			&-prof 
+				color: #000
+				font-size: 20px
+				font-weight: 400
+@media (max-width: 1035px)
+	.testim 
+		margin: auto
+		text-align: center
+		&-img 
+			margin: auto
+			text-align: center
+		&-right 
+			padding-top: 45px
+			margin: auto
+			text-align: center
